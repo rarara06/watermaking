@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermarking Gambar dengan LSB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Watermarking Gambar</h1>
+        <label for="imageInput">Pilih Gambar Host:</label>
+        <input type="file" id="imageInput" accept="image/*">
+        <label for="watermarkImageInput">Pilih Gambar Watermark:</label>
+        <input type="file" id="watermarkImageInput" accept="image/*">
+        <button id="applyWatermark">Terapkan Watermark</button>
+        <br><br>
+        <label for="watermarkedImageInput">Pilih Gambar yang telah Diberi Watermark:</label>
+        <input type="file" id="watermarkedImageInput" accept="image/*">
+        <button id="extractWatermark">Ekstrak Watermark</button>
+        <canvas id="imageCanvas"></canvas>
+        <a id="downloadLink" style="display:none;">Unduh Gambar</a>
+        <p id="extractedWatermark"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
